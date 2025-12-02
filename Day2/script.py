@@ -25,10 +25,8 @@ def checkcharpositions(strn, partlen, amount):
 def multiplevalidator(n):
     strn = str(n)
     length = len(strn)
-    #print("Checking " + strn)
 
     for partlen in range(1, length):
-        #print("for partlen " + str(partlen))
         if (length % partlen != 0):
             continue
         
@@ -37,7 +35,6 @@ def multiplevalidator(n):
         if not valid:
             return False
             
-    #print("Found valid: " + strn)
     return True
 
 def validate(validator):
